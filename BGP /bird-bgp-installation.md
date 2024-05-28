@@ -1,4 +1,4 @@
-##Step 1 : Update APT
+##Step 1 : Update APT </br>
 ...
-sudo apt update 
+sudo apt update
 ...
