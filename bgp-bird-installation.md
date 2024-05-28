@@ -26,6 +26,7 @@
   
 
     sudo bird --version
+    sudo systemctl status bird
 
 **Step 7 : Check Protocols**
 
