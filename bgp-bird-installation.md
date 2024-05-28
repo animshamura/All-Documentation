@@ -30,5 +30,5 @@
 **Step 7 : Check Protocols**
 
     sudo birdc
-    birdc> show protocols
+    show protocols
 
