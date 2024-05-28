@@ -1,4 +1,6 @@
-##Step 1 : Update APT </br>
-...bash
+##Step 1 : Update APT 
+...
 sudo apt update
 ...
+
+
