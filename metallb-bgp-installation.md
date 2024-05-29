@@ -5,6 +5,7 @@ BGP, or Border Gateway Protocol, is a routing protocol used to share network lay
 **Why do we use BGP ?**
 
 Interior Gateway Protocols (IGPs) focus on providing routing information within a single network, while BGP was developed to handle routing between different networks, or domains. IGPs, such as RIP, OSPF, and IS-IS, optimize paths within a network but lack the extensive policy control needed for inter-domain routing. BGP, on the other hand, is designed to manage policies and scale for inter-domain routing, serving a different purpose than IGPs.
+
 ![BGP & IGP](https://github.com/animshamura/Documentation-Images/blob/main/BGPI.drawio.png?raw=true)    
 **BGP Working Procedure**
 
