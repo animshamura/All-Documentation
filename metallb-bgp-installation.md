@@ -60,13 +60,14 @@ First, apply the MetalLB manifest to your cluster. This installs MetalLB’s com
 
     kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.3/manifests/namespace.yaml
 
-### Step 2 : Configure VyOS 
-
-  Configure VyOS form the VyOs CLI. VyOS must have to be installed.
+### Step 2 : Install and Configure VyOS 
+  You need a separate VM to operate VyOS. Therefore, you have to download the night build images of VyOS from their official website.Then, configure VyOS form the VyOs CLI. You have to login with default user and password which is vyos in both cases. 
 
     configure
-    set protocols bgp <local-asn> 
-    set protocols bgp <local-asn> neighbor <neighbor-ip> remote-as <neighbor-asn>
+    set interfaces ethernet eth1 dhcp 
+    set interfaces ethernet eth0 address <router-ip> 
+    set protocols bgp system-as <local-ASN> 
+    set protocols bgp neighbor <neighbor-ip> remote-as <neighbor-asn>
     commit
     save
     exit
@@ -95,8 +96,9 @@ Create configmap applying kubectl command.
     kubect apply -f configmap.yaml
 
 ### Step 4 : Check BGP peering 
-Use the command below to check whether BGP peering has been established. 
+Use the command below to check whether BGP peering has been established in VyOS CLI/
 
+    show ip route
     show bgp neighbor
 
  ### Step 5 : Test MetalLB Loadbalancing 
