@@ -2,6 +2,23 @@
 
 BGP, or Border Gateway Protocol, is a routing protocol used to share network layer reachability information (NLRI) between different routing domains, often referred to as Autonomous Systems (ASs). Each AS is typically managed by a separate administrative organization. The current structure of the Internet is a vast network composed of numerous interconnected ASs. As an external routing protocol, BGP is extensively utilized among Internet Service Providers (ISPs). It facilitates the exchange of reachable routing information between ASs, helps establish paths across ASs, prevents routing loops, and implements routing policies between ASs. The protocol has evolved through three earlier versions: BGP-1, BGP-2, and BGP-3, with the most commonly used version today being BGP-4.
 
+There are two types of BGP : iBGP and eBGP 
+
+**Internal BGP (iBGP)**:
+- Imagine your internet service provider (ISP) as a big network. Within that network, there are lots of routers talking to each other to figure out the best paths for your data to travel.
+- iBGP is like the secret language these routers use to chat with each other. It helps them share information about the best routes to take within the same ISP.
+- In a big ISP, there could be tons of routers, and they all need to be on the same page. iBGP makes sure they're all talking to each other properly.
+- Also, if one router knows a better path, it can tell the others without changing anything about the message.
+
+**External BGP (eBGP)**:
+- Now, let's zoom out a bit. Imagine your ISP as one country, and there are other countries (other ISPs) out there.
+- eBGP is like the language your country uses to talk to other countries about the best routes for data to travel between them.
+- ISPs need to share information about the best routes to reach each other's networks. eBGP helps them do that.
+- It's like they're neighbors sharing tips on the best roads to take to reach each other's houses.
+- But to have this chat, their routers need to be directly connected or have special directions (static routes) to find each other.
+
+So, iBGP helps routers within the same ISP talk to each other, while eBGP helps different ISPs communicate to find the best paths for your data to travel across the internet. Both of these protocols are really important for making sure your internet connection runs smoothly!
+
 **Why do we use BGP ?**
 
 Interior Gateway Protocols (IGPs) focus on providing routing information within a single network, while BGP was developed to handle routing between different networks, or domains. IGPs, such as RIP, OSPF, and IS-IS, optimize paths within a network but lack the extensive policy control needed for inter-domain routing. BGP, on the other hand, is designed to manage policies and scale for inter-domain routing, serving a different purpose than IGPs.
