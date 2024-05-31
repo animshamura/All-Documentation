@@ -2,7 +2,7 @@
 
 BGP, or Border Gateway Protocol, is a routing protocol used to share network layer reachability information (NLRI) between different routing domains, often referred to as Autonomous Systems (ASs). Each AS is typically managed by a separate administrative organization. The current structure of the Internet is a vast network composed of numerous interconnected ASs. As an external routing protocol, BGP is extensively utilized among Internet Service Providers (ISPs). It facilitates the exchange of reachable routing information between ASs, helps establish paths across ASs, prevents routing loops, and implements routing policies between ASs. The protocol has evolved through three earlier versions: BGP-1, BGP-2, and BGP-3, with the most commonly used version today being BGP-4.
 
-There are two types of BGP : iBGP and eBGP 
+There are two types of BGP : iBGP and eBGP. 
 
 **Internal BGP (iBGP)**:
 - Imagine your internet service provider (ISP) as a big network. Within that network, there are lots of routers talking to each other to figure out the best paths for your data to travel.
@@ -61,7 +61,7 @@ First, apply the MetalLB manifest to your cluster. This installs MetalLB’s com
     kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.3/manifests/namespace.yaml
 
 ### Step 2 : Install and Configure VyOS 
-  You need a separate VM to operate VyOS. Therefore, you have to download the night build images of VyOS from their official website. For installing VyOS in a VM, you must choose any of Debian realises of the linux distributions. Then, configure VyOS form the VyOs CLI. You have to login with default user and password which is vyos in both cases. 
+  You need a separate VM to operate VyOS. Therefore, you have to download the night build image of VyOS from their official website. For installing VyOS in a VM, you must choose any of Debian realises of the linux distributions. Then, configure VyOS form the VyOs CLI. You have to login with default user and password which is vyos in both cases. 
 
     configure
     set interfaces ethernet eth1 dhcp 
