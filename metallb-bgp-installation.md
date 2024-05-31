@@ -61,7 +61,7 @@ First, apply the MetalLB manifest to your cluster. This installs MetalLB’s com
     kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.3/manifests/namespace.yaml
 
 ### Step 2 : Install and Configure VyOS 
-  You need a separate VM to operate VyOS. Therefore, you have to download the night build images of VyOS from their official website.Then, configure VyOS form the VyOs CLI. You have to login with default user and password which is vyos in both cases. 
+  You need a separate VM to operate VyOS. Therefore, you have to download the night build images of VyOS from their official website. For installing VyOS in a VM, you must choose any of Debian realises of the linux distributions. Then, configure VyOS form the VyOs CLI. You have to login with default user and password which is vyos in both cases. 
 
     configure
     set interfaces ethernet eth1 dhcp 
