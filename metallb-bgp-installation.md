@@ -42,8 +42,10 @@ MetalLB is a tool for Kubernetes clusters without cloud provider load balancer s
     -   MetalLB ensures that external networks recognize the IP addresses it assigns to services.
     -   In Layer 2 mode, a machine in the cluster announces the IPs using ARP or NDP protocols.
     -   In BGP mode, cluster machines establish peering sessions with nearby routers, enabling load balancing and traffic control.     
-        ![MetalLB.drawio.png](https://github.com/animshamura/Documentation-Images/blob/main/MetalLB.drawio.png?raw=true)      
-                       
+        ![MetalLB.drawio.png](https://github.com/animshamura/Documentation-Images/blob/main/MetalLB.drawio.png?raw=true)
+**Metal-LB Working Procedure**
+![MetalLB.drawio.png](![image](https://github.com/animshamura/All-Documentation/assets/47661479/6bea850f-80ab-4c16-b2b3-3abe0eefd797)
+)
 ### Installation and Configuration of MetalLB with BGP
 
 #### Prerequisites:
