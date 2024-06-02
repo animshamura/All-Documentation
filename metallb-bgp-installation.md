@@ -52,19 +52,19 @@ In MetalLB, the speaker and controller components work together to manage the lo
 
 The controller is responsible for:
 
-    IP Assignment: Assigning IP addresses from a predefined pool to Kubernetes services of type LoadBalancer.
-    Monitoring Services: Watching for changes in Kubernetes services and nodes, and updating the configuration accordingly.
-    Configuration Management: Managing the configuration specified in Kubernetes ConfigMaps, such as IP address pools and BGP peers.
+   - IP Assignment: Assigning IP addresses from a predefined pool to Kubernetes services of type LoadBalancer.
+   - Monitoring Services: Watching for changes in Kubernetes services and nodes, and updating the configuration accordingly.
+   - Configuration Management: Managing the configuration specified in Kubernetes ConfigMaps, such as IP address pools and BGP peers.
 
 **Speaker**
 
 The speaker is responsible for:
 
-    Announcing IPs: Ensuring that the assigned IP addresses are announced to the network.
+   - Announcing IPs: Ensuring that the assigned IP addresses are announced to the network.
         In Layer 2 mode, it uses ARP (Address Resolution Protocol) to announce IPs.
         In BGP mode, it uses BGP (Border Gateway Protocol) to advertise routes to external routers.
-    Handling Traffic: Ensuring that traffic directed to the assigned IPs is routed to the correct node.
-    Failover Management: Reassigning IPs and re-announcing them if a node fails.
+   - Handling Traffic: Ensuring that traffic directed to the assigned IPs is routed to the correct node.
+   - Failover Management: Reassigning IPs and re-announcing them if a node fails.
 ![image](https://github.com/animshamura/Documentation-Images/blob/main/MetalLB-Procedure.drawio.png?raw=true)
 ### Installation and Configuration of MetalLB with BGP
 
