@@ -68,7 +68,7 @@ The speaker is responsible for:
    - Handling Traffic: Ensuring that traffic directed to the assigned IPs is routed to the correct node.
    - Failover Management: Reassigning IPs and re-announcing them if a node fails.
 
-![image](https://github.com/animshamura/Documentation-Images/blob/main/MetalLBProcess.drawio.png?raw=true)
+![image](https://github.com/animshamura/Documentation-Images/blob/main/MetalLB-Demo.drawio.png?raw=true)
 
 ### Installation and Configuration of MetalLB with BGP
 
