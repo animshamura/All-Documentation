@@ -79,6 +79,7 @@ The speaker is responsible for:
 -   BGP router(s) in the network
 
 ### Step 1 : Install MetalLB
+#### Enable Strict ARP 
 
 #### Apply the MetalLB Manifest
 
