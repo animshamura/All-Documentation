@@ -50,7 +50,7 @@ In MetalLB, the speaker and controller components work together to manage the lo
 
 **Roles & Responsibilities**
 
-**Controller**
+**Controller :**
 
 The controller is responsible for:
 
@@ -58,7 +58,7 @@ The controller is responsible for:
    - Monitoring Services: Watching for changes in Kubernetes services and nodes, and updating the configuration accordingly.
    - Configuration Management: Managing the configuration specified in Kubernetes ConfigMaps, such as IP address pools and BGP peers.
 
-**Speaker**
+**Speaker :**
 
 The speaker is responsible for:
 
