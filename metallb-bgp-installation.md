@@ -47,6 +47,7 @@ MetalLB is a tool for Kubernetes clusters without cloud provider load balancer s
 **Metal-LB Working Procedure**
 
 In MetalLB, the speaker and controller components work together to manage the load balancing of services within a Kubernetes cluster. Here's a detailed breakdown of their roles and how they interact:
+
 **Roles & Responsibilities**
 
 **Controller**
