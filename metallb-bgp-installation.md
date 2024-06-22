@@ -131,7 +131,7 @@ Use the command below to check whether BGP peering has been established in VyOS 
  ### Step 5 : Test MetalLB Loadbalancing 
 Deploy a Kubernetes service of type LoadBalancer and ensure that MetalLB assigns an external IP address from the configured pool. Test the load balancing functionality to verify that traffic is being properly distributed to the service endpoints.
   
-      ---  
+        ---  
         apiVersion: apps/v1  
         kind: Deployment  
         metadata:  
